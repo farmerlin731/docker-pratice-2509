@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+target/
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+!.env.example   # 可以留一份範例，給別人參考格式
+
+# Docker related
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# Ignore Docker build cache and temp files
+**/.dockerignore
+**/Dockerfile.*~
+**/docker-compose.*~
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
