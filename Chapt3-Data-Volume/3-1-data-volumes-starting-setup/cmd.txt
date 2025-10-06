@@ -1,0 +1,12 @@
+# build
+docker build -t feedback-node:volumes .  
+
+# named volumes
+docker run -d -p 3000:80 --rm --name fb-app -v feedback:/app/feedback feedback-node:volumes
+
+# mount
+docker run -d -p 3000:80 --rm --name fb-app 
+-v feedback:/app/feedback 
+-v "/Users/yuchiehlin/docker-pratice/Chapt3-Data-Volume/3-1-data-volumes-starting-setup:/app" 
+-v /app/node_modules 
+feedback-node:volumes
